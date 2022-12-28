@@ -16,26 +16,34 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a class="logo-header" href="./index.html"><span class="logo-highlight">Web</span>Studio</a>
+      <div class="container header_container">
+        <a class="logo logo--header" href="./index.html"
+          ><span class="logo_highlight">Web</span>Studio</a
+        >
         <nav>
-          <ul class="navigation-menu">
-            <li class="navigation-item"><a class="navigation" href="./index.html">Agencja</a></li>
-            <li class="navigation-item">
-              <a class="navigation navigation-portfolio" href="./portfolio.html">Portfolio</a>
+          <ul class="navigation">
+            <li class="navigation_item">
+              <a class="navigation_link" href="./index.html">Agencja</a>
             </li>
-            <li class="navigation-item"><a class="navigation" href="">Kontakt</a></li>
+            <li class="navigation_item">
+              <a class="navigation_link navigation_link--portfolio" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation_item">
+              <a class="navigation_link" href="">Kontakt</a>
+            </li>
           </ul>
         </nav>
 
-        <a class="contact-header contact-header-1" href="mailto:info@devstudio.com">
-          <svg class="icon-envelope-header">
+        <a class="contact-header contact-header--mail" href="mailto:info@devstudio.com">
+          <svg class="contact-header_icon-envelope">
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg>
           info@devstudio.com</a
         >
-        <a class="contact-header contact-header-2" href="tel:+48111111111">
-          <svg class="icon-smartphone-header">
+        <a class="contact-header contact-header--tel" href="tel:+48111111111">
+          <svg class="contact-header_icon-smartphone">
             <use href="./images/icons.svg#icon-smartphone"></use>
           </svg>
           +48&nbsp;111&nbsp;111&nbsp;111</a
@@ -224,54 +232,54 @@
     <footer class="footer">
       <div class="container footer-container">
         <div>
-          <a class="logo-footer" href="./index.html"
-            ><span class="logo-highlight">Web</span>Studio</a
+          <a class="logo logo--footer" href="./index.html"
+            ><span class="logo_highlight">Web</span>Studio</a
           >
-          <address class="footer-address">
-            <span class="contact-footer-adress">m. Warszawa, Aleje Jerozolimskie 21</span> <br />
-            <a class="contact-footer" href="mailto:info@example.com">info@example.com</a> <br />
-            <a class="contact-footer" href="tel:+48111111111">+48 111 111 111</a>
+          <address class="address">
+            <span class="address_place">m. Warszawa, Aleje Jerozolimskie 21</span> <br />
+            <a class="address_contact" href="mailto:info@example.com">info@example.com</a> <br />
+            <a class="address_contact" href="tel:+48111111111">+48 111 111 111</a>
           </address>
         </div>
         <div class="social-media-footer">
-          <span class="social-media-title-footer">Dołącz do nas</span>
-          <ul class="social-media-team-list-footer">
+          <span class="social-media-footer_title">Dołącz do nas</span>
+          <ul class="social-media-footer_list">
             <li>
-              <svg class="social-media-team-list-instagram-footer">
+              <svg class="social-media-icon">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </li>
             <li>
-              <svg class="social-media-team-list-twitter-footer">
+              <svg class="social-media-icon">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </li>
             <li>
-              <svg class="social-media-team-list-facebook-footer">
+              <svg class="social-media-icon">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </li>
             <li>
-              <svg class="social-media-team-list-linkedin-footer">
+              <svg class="social-media-icon">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </li>
           </ul>
         </div>
-        <form class="signup-newsletter-footer" name="signup-newsletter">
+        <form class="newsletter" name="signup-newsletter">
           <label for="signup">
-            <span class="newsletter-tittle">Zapisz się do newslettera</span>
+            <span class="newsletter_tittle">Zapisz się do newslettera</span>
             <input
               id="signup"
-              class="newsletter-input"
+              class="newsletter_input"
               type="email"
               name="email"
               placeholder="E-mail"
             />
           </label>
-          <button class="newsletter-button" type="submit">
+          <button class="newsletter_button" type="submit">
             Zapisz się
-            <svg class="newsletter-send-icon">
+            <svg class="newsletter_icon">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
