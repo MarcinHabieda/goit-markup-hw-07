@@ -865,6 +865,15 @@ input {
   bottom: -28px;
 }
 
+.browser-list {
+  display: flex;
+  justify-content: center;
+}
+
+.browser-list > li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .list-button {
   font-weight: 500;
   font-size: 16px;
@@ -878,9 +887,18 @@ input {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.category-browser-list {
-  display: flex;
-  justify-content: center;
+.list-button:hover {
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.list-button:focus {
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .category-list {
@@ -889,40 +907,6 @@ input {
   margin-top: 50px;
   gap: 30px;
   width: 1170;
-}
-
-.list-item-box {
-  position: relative;
-  width: 370px;
-  height: 294px;
-  overflow: hidden;
-}
-
-.list-item-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 49px;
-  padding-left: 24px;
-  background-color: var(--highlight-color);
-  opacity: 0.9;
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-item-overlay-descryption {
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--secondary-color);
-  opacity: 1;
-}
-
-.list-item:hover .list-item-overlay {
-  transform: translateY(0);
 }
 
 .category-list > li {
@@ -941,38 +925,54 @@ input {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.category-browser-list > .category-list-item:not(:last-child) {
-  margin-right: 8px;
+.category-list_item:hover .category-list_overlay {
+  transform: translateY(0);
 }
 
-.list-button:hover {
+.category-list_box {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.category-list_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 49px;
+  padding-left: 24px;
   background-color: var(--highlight-color);
-  color: var(--secondary-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  opacity: 0.9;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-button:focus {
-  background-color: var(--highlight-color);
-  color: var(--secondary-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.cell-title {
-  font-weight: 700;
+.category-list_descryption {
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.56;
+  color: var(--secondary-color);
+  opacity: 1;
 }
 
-.category-list-descryption {
+.category-list_footer {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
 
-.category {
+.category-list_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.category-list_category {
   font-size: 16px;
   line-height: 1.86;
   color: var(--secondary-text-color);
