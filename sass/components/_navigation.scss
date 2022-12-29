@@ -7,7 +7,7 @@
     margin-right: 46px;
   }
 
-  &_link {
+  &__link {
     text-decoration: none;
     font: $link-font;
     color: $main-color;
@@ -17,13 +17,13 @@
     position: relative;
   }
 
-  &_link:hover,
-  &_link:focus {
+  &__link:hover,
+  &__link:focus {
     color: $highlight-color;
   }
 }
 
-.navigation_link {
+.navigation__link {
   &--index::after {
     content: '';
     color: $highlight-color;

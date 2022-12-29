@@ -13,7 +13,7 @@
     margin-right: 30px;
   }
 
-  &_box {
+  &__box {
     width: 370px;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
@@ -24,7 +24,7 @@
     z-index: 1;
   }
 
-  &_title {
+  &__title {
     font: $sub-title-font;
     text-transform: uppercase;
     color: $secondary-color;

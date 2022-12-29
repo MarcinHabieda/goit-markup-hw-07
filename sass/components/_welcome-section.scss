@@ -18,7 +18,7 @@
   width: 696px;
   text-align: center;
 
-  &_button {
+  &__button {
     display: block;
     font-weight: 700;
     font-size: 16px;
@@ -35,8 +35,8 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_button:hover,
-  &_button:focus {
+  &__button:hover,
+  &__button:focus {
     background-color: $highlight-color;
     color: $secondary-color;
   }

@@ -2,13 +2,13 @@
   margin-top: 20px;
   width: 246px;
 
-  &_place {
+  &__place {
     font: $default-font;
     text-decoration: none;
     color: $secondary-color;
   }
 
-  &_contact {
+  &__contact {
     font: $default-font;
     text-decoration: none;
     color: $contact-footer-color;
@@ -18,8 +18,8 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_contact:hover,
-  &_contact:focus {
+  &__contact:hover,
+  &__contact:focus {
     color: $highlight-color;
   }
 }

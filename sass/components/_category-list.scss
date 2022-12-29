@@ -17,14 +17,14 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &_box {
+  &__box {
     position: relative;
     width: 370px;
     height: 294px;
     overflow: hidden;
   }
 
-  &_overlay {
+  &__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,27 +40,27 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_descryption {
+  &__descryption {
     font-size: 18px;
     line-height: 1.56;
     color: $secondary-color;
     opacity: 1;
   }
 
-  &_footer {
+  &__footer {
     padding: 20px 24px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
   }
 
-  &_title {
+  &__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
   }
 
-  &_category {
+  &__category {
     font-size: 16px;
     line-height: 1.86;
     color: $secondary-text-color;
@@ -68,6 +68,6 @@
   }
 }
 
-.category-list_item:hover .category-list_overlay {
+.category-list__item:hover .category-list__overlay {
   transform: translateY(0);
 }

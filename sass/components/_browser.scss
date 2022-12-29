@@ -6,7 +6,7 @@
     margin-right: 8px;
   }
 
-  &_button {
+  &__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -19,8 +19,8 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_button:hover,
-  &_button:focus {
+  &__button:hover,
+  &__button:focus {
     background-color: $highlight-color;
     color: $secondary-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),

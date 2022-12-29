@@ -3,7 +3,7 @@
   width: 570px;
   display: flex;
 
-  &_tittle {
+  &__tittle {
     font: $sub-title-font;
     color: $secondary-color;
     margin-bottom: 20px;
@@ -11,7 +11,7 @@
     text-transform: uppercase;
   }
 
-  &_input {
+  &__input {
     height: 50px;
     width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -24,7 +24,7 @@
     padding-left: 10px;
   }
 
-  &_button {
+  &__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -41,7 +41,7 @@
     margin-top: 36px;
   }
 
-  &_icon {
+  &__icon {
     width: 24px;
     margin-left: 24px;
     fill: $secondary-color;

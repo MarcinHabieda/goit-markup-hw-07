@@ -24,27 +24,27 @@
     position: relative;
   }
 
-  &_box {
+  &__box {
     position: relative;
   }
 
-  &_box:focus-within,
-  &_box:hover {
+  &__box:focus-within,
+  &__box:hover {
     fill: $highlight-color;
   }
 
-  &_label {
+  &__label {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     color: $secondary-text-color;
   }
 
-  &_label:not(:first-child) {
+  &__label:not(:first-child) {
     margin-top: 10px;
   }
 
-  &_icon-user {
+  &__icon-user {
     width: 12px;
     height: 12px;
     position: absolute;
@@ -55,7 +55,7 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_icon-mail {
+  &__icon-mail {
     width: 15px;
     height: 12px;
     position: absolute;
@@ -66,7 +66,7 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_input {
+  &__input {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -78,12 +78,12 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_input:focus,
-  &_input:hover {
+  &__input:focus,
+  &__input:hover {
     border-color: $highlight-color;
   }
 
-  &_icon-phone {
+  &__icon-phone {
     width: 13px;
     height: 13px;
     position: absolute;
@@ -94,7 +94,7 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_textarea {
+  &__textarea {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -108,12 +108,12 @@
     transition-timing-function: $default-transition-timing-function;
   }
 
-  &_textarea:hover,
-  &_textarea:focus {
+  &__textarea:hover,
+  &__textarea:focus {
     border-color: $highlight-color;
   }
 
-  &_icon-checkbox {
+  &__icon-checkbox {
     width: 16px;
     height: 15px;
     border: 2px solid $main-color;
@@ -121,7 +121,7 @@
     position: relative;
   }
 
-  &_icon-check {
+  &__icon-check {
     width: 11px;
     height: 8px;
     position: absolute;
@@ -139,7 +139,7 @@
   margin-top: 20px;
   position: relative;
 
-  &_input {
+  &__input {
     width: 16px;
     height: 15px;
     opacity: 0;
@@ -149,7 +149,7 @@
   }
 }
 
-.modal-form-checkbox_input:checked + .modal-form_icon-checkbox {
+.modal-form-checkbox__input:checked + .modal-form__icon-checkbox {
   background-color: $highlight-color;
   border-color: $highlight-color;
 }
@@ -159,7 +159,7 @@
   color: $secondary-text-color;
   margin-left: 8px;
 
-  &_highlight {
+  &__highlight {
     color: $highlight-color;
     text-decoration: underline;
   }
